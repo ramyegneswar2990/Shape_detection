@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Detector</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shape Detector</h1>
+    <div class="upload-container">
+      <input type="file" id="imageInput" accept="image/*">
+      <label for="imageInput" class="upload-btn">Choose Image</label>
+    </div>
+    <div class="results">
+      <div class="image-container">
+        <canvas id="canvas"></canvas>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div class="detection-results">
+        <h2>Detection Results</h2>
+        <div id="results">
+          <p class="placeholder">Upload an image to detect shapes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

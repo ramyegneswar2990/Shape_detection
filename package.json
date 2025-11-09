@@ -1,0 +1,15 @@
+{
+  "name": "shape-detector",
+  "version": "1.0.0",
+  "description": "Shape Detection Challenge",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^7.2.2"
+  }
+}

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.upload-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #2980b9;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.detection-results {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detection-results h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.shape-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.shape-item h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.shape-property {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.confidence-bar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.confidence-level {
+  height: 100%;
+  background-color: #2ecc71;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.placeholder {
+  color: #7f8c8d;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .results {
+    flex-direction: column;
+  }
+  
+  .image-container, .detection-results {
+    width: 100%;
+  }
+}
