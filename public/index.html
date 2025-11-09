@@ -11,36 +11,23 @@
       margin: 0 auto;
       padding: 20px;
     }
-    h1 {
-      color: #2c3e50;
-      text-align: center;
-    }
     #upload-container {
       margin: 20px 0;
-      padding: 40px 20px;
+      padding: 20px;
       border: 2px dashed #ccc;
       text-align: center;
-      border-radius: 8px;
-      background: #f9f9f9;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    #upload-container:hover {
-      border-color: #4CAF50;
-      background: #f0f8f0;
+      border-radius: 5px;
     }
     #imageInput {
       display: none;
     }
     #upload-label {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 10px 20px;
       background: #4CAF50;
       color: white;
       cursor: pointer;
       border-radius: 4px;
-      font-size: 16px;
-      transition: background 0.3s;
     }
     #upload-label:hover {
       background: #45a049;
@@ -48,14 +35,11 @@
     #preview-container {
       margin: 20px 0;
       text-align: center;
-      display: none;
     }
-    #preview-canvas {
+    #preview-image {
       max-width: 100%;
       max-height: 400px;
       border: 1px solid #ddd;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     #results {
       margin-top: 20px;
@@ -63,19 +47,13 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       background-color: #f9f9f9;
-      min-height: 100px;
-    }
-    .no-shapes {
-      color: #666;
-      text-align: center;
-      font-style: italic;
     }
   </style>
 </head>
 <body>
   <h1>Shape Detector</h1>
   
-  <div id="upload-container" onclick="document.getElementById('imageInput').click()">
+  <div id="upload-container">
     <input type="file" id="imageInput" accept="image/*">
     <label for="imageInput" id="upload-label">Choose an image</label>
     <p>or drag and drop an image here</p>
@@ -86,7 +64,7 @@
   </div>
 
   <div id="results">
-    <p class="no-shapes">Upload an image to detect shapes.</p>
+    <p>Upload an image to detect shapes.</p>
   </div>
 
   <script type="module" src="/src/main.ts"></script>
