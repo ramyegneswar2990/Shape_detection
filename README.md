@@ -23,7 +23,9 @@ A web application that detects and classifies shapes in uploaded images using co
 - 🎨 Clean and responsive user interface
 - 🚀 Built with modern web technologies
 
-## Screenshots
+## Screenshots:
+Outputs:
+<img width="769" height="921" alt="image" src="https://github.com/user-attachments/assets/bcac038a-cb49-4406-9bc1-d1acd0235294" />
 
 ### Basic Shapes Detection
 ![Basic Shapes Detection](test-images/basic-shapes.png)
